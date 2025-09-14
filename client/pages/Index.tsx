@@ -117,7 +117,7 @@ export default function Index() {
             M.Tech CSE student passionate about AI, web apps, and digital forensics.
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
-            <a href="/Gnaneshwari%20Sarla.pdf" download>
+            <a href="/api/resume">
               <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
                 Download Resume
               </Button>
