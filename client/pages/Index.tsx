@@ -139,7 +139,14 @@ export default function Index() {
         </div>
         <div className="relative">
           <div className="absolute -inset-6 -z-10 rounded-2xl bg-gradient-to-tr from-primary/20 to-accent/20 blur-2xl" />
-          <div className="aspect-square w-full rounded-xl border bg-card shadow-sm md:aspect-[4/3]" />
+          <div className="aspect-square w-full overflow-hidden rounded-xl border shadow-sm md:aspect-[4/3]">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fdf5323ace0824cfa890491dda5b9142d%2F488cb62db69b41f587c5f908c4b9780a?format=webp&width=800"
+              alt="Gnaneshwari Sarla profile photo"
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+          </div>
         </div>
       </section>
 
