@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import Logo from "@/components/Logo";
 
 const navItems = [
   { label: "About", href: "/#about" },
@@ -17,7 +18,7 @@ export default function Layout() {
       <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
           <a href="/" className="group inline-flex items-center gap-2">
-            <div className="size-8 rounded-md bg-gradient-to-tr from-primary to-accent" />
+            <Logo />
             <span className="text-sm font-semibold tracking-wide text-foreground/90 group-hover:text-foreground">
               Gnaneshwari Sarla
             </span>
