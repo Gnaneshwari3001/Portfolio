@@ -34,7 +34,7 @@ export default function Layout() {
                 {item.label}
               </a>
             ))}
-            <a href="/Gnaneshwari%20Sarla.pdf" download>
+            <a href="/api/resume">
               <Button size="sm" className="bg-primary/90 hover:bg-primary">
                 Download Resume
               </Button>
