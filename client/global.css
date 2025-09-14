@@ -5,6 +5,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .gradient-title {
+    background-image: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--accent)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .section-kicker {
+    @apply inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold tracking-wide text-primary;
+  }
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary/10 hover:border-primary/40;
+  }
+  .btn-shine {
+    background-image: linear-gradient(
+      90deg,
+      hsl(var(--primary)) 0%,
+      hsl(var(--accent)) 50%,
+      hsl(var(--primary)) 100%
+    );
+    background-size: 200% 100%;
+    transition: background-position 300ms ease;
+  }
+  .btn-shine:hover { background-position: 100% 0; }
+}
+
 @layer base {
   /**
    * Tailwind CSS theme
