@@ -108,17 +108,16 @@ export default function Index() {
       {/* Hero */}
       <section className="relative mx-auto mt-12 grid items-center gap-8 rounded-2xl border bg-gradient-to-tr from-primary/5 via-accent/5 to-transparent px-6 py-12 md:mt-16 md:grid-cols-2 md:px-12">
         <div>
-          <h1 className="text-3xl font-extrabold tracking-tight text-foreground md:text-5xl">
-            Gnaneshwari Sarla — Computer Science Engineer | AI, Web Development
-            & Digital Forensics
+          <span className="section-kicker">WELCOME</span>
+          <h1 className="mt-2 text-4xl font-extrabold leading-tight tracking-tight md:text-6xl gradient-title">
+            Gnaneshwari Sarla — Computer Science Engineer
           </h1>
-          <p className="mt-4 max-w-prose text-muted-foreground md:text-lg">
-            M.Tech CSE student passionate about AI, web apps, and digital
-            forensics.
+          <p className="mt-3 max-w-prose text-base text-muted-foreground md:text-lg">
+            AI, Web Development & Digital Forensics — M.Tech CSE student passionate about building useful systems.
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <a href="/api/resume">
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+              <Button className="btn-shine text-primary-foreground">
                 Download Resume
               </Button>
             </a>
@@ -127,23 +126,23 @@ export default function Index() {
               target="_blank"
               rel="noreferrer"
             >
-              <Button variant="secondary">LinkedIn</Button>
+              <Button variant="secondary" className="card-hover">LinkedIn</Button>
             </a>
             <a
               href="https://github.com/Gnaneshwari3001"
               target="_blank"
               rel="noreferrer"
             >
-              <Button variant="outline">GitHub</Button>
+              <Button variant="outline" className="card-hover">GitHub</Button>
             </a>
             <a href="mailto:gnaneshwarisarla001@gmail.com">
-              <Button variant="ghost">Email Me</Button>
+              <Button variant="ghost" className="card-hover">Email Me</Button>
             </a>
           </div>
         </div>
-        <div className="relative">
-          <div className="absolute -inset-6 -z-10 rounded-2xl bg-gradient-to-tr from-primary/20 to-accent/20 blur-2xl" />
-          <div className="aspect-square w-full overflow-hidden rounded-xl border shadow-sm md:aspect-[4/3]">
+        <div className="relative flex items-center justify-center">
+          <div className="absolute -inset-6 -z-10 rounded-2xl bg-gradient-to-tr from-primary/40 to-accent/40 blur-2xl" />
+          <div className="aspect-square w-64 overflow-hidden rounded-full border-4 border-background shadow-xl ring-8 ring-primary/20 md:w-80">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Fdf5323ace0824cfa890491dda5b9142d%2F488cb62db69b41f587c5f908c4b9780a?format=webp&width=800"
               alt="Gnaneshwari Sarla profile photo"
@@ -155,8 +154,9 @@ export default function Index() {
       </section>
 
       {/* About */}
-      <section id="about" className="mx-auto mt-20 max-w-5xl">
-        <h2 className="text-2xl font-bold">About</h2>
+      <section id="about" className="mx-auto mt-24 max-w-5xl">
+        <span className="section-kicker">ABOUT</span>
+        <h2 className="mt-2 text-3xl font-bold">About</h2>
         <p className="mt-3 text-muted-foreground">
           Enthusiastic and detail-oriented Computer Science Engineering
           postgraduate with strong knowledge of Java, Python, SQL, HTML, CSS,
@@ -169,10 +169,11 @@ export default function Index() {
       </section>
 
       {/* Skills */}
-      <section id="skills" className="mx-auto mt-16 max-w-5xl">
-        <h2 className="text-2xl font-bold">Skills</h2>
+      <section id="skills" className="mx-auto mt-20 max-w-5xl">
+        <span className="section-kicker">SKILLS</span>
+        <h2 className="mt-2 text-3xl font-bold">Skills</h2>
         <div className="mt-6 grid gap-6 md:grid-cols-2">
-          <Card>
+          <Card className="card-hover">
             <CardHeader>
               <CardTitle>Languages</CardTitle>
             </CardHeader>
@@ -180,7 +181,7 @@ export default function Index() {
               <p>Java, Python, SQL, HTML, CSS, JavaScript</p>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="card-hover">
             <CardHeader>
               <CardTitle>Frameworks</CardTitle>
             </CardHeader>
@@ -188,7 +189,7 @@ export default function Index() {
               <p>Node.js</p>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="card-hover">
             <CardHeader>
               <CardTitle>Databases</CardTitle>
             </CardHeader>
@@ -196,7 +197,7 @@ export default function Index() {
               <p>SQL, MySQL, Firebase, Supabase</p>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="card-hover">
             <CardHeader>
               <CardTitle>Tools</CardTitle>
             </CardHeader>
@@ -204,7 +205,7 @@ export default function Index() {
               <p>Git, VS Code, Canva, Builder.io, n8n</p>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="card-hover">
             <CardHeader>
               <CardTitle>Cyber Forensics</CardTitle>
             </CardHeader>
@@ -212,7 +213,7 @@ export default function Index() {
               <p>EnCase, FTK Imager, Autopsy</p>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="card-hover">
             <CardHeader>
               <CardTitle>Cybersecurity & Concepts</CardTitle>
             </CardHeader>
@@ -224,13 +225,15 @@ export default function Index() {
       </section>
 
       {/* Projects */}
-      <section id="projects" className="mx-auto mt-16 max-w-6xl">
+      <section id="projects" className="mx-auto mt-20 max-w-6xl">
         <div className="flex items-end justify-between gap-4">
-          <h2 className="text-2xl font-bold">Projects</h2>
+          <span className="section-kicker">PROJECTS</span>
+          <h2 className="text-3xl font-bold">Projects</h2>
         </div>
         <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
           {projects.map((p) => (
-            <Card key={p.title} className="flex flex-col">
+            <Card key={p.title} className="flex flex-col card-hover">
+              <div className="h-1 w-full bg-gradient-to-r from-primary/60 via-accent/60 to-primary/60" />
               <CardHeader>
                 <CardTitle className="text-xl">{p.title}</CardTitle>
               </CardHeader>
@@ -255,7 +258,7 @@ export default function Index() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <Button variant="outline">View Project</Button>
+                    <Button variant="outline" className="btn-shine">View Project</Button>
                   </a>
                 </div>
               </CardContent>
@@ -265,10 +268,11 @@ export default function Index() {
       </section>
 
       {/* Experience */}
-      <section id="experience" className="mx-auto mt-16 max-w-5xl">
-        <h2 className="text-2xl font-bold">Experience</h2>
+      <section id="experience" className="mx-auto mt-20 max-w-5xl">
+        <span className="section-kicker">EXPERIENCE</span>
+        <h2 className="mt-2 text-3xl font-bold">Experience</h2>
         <div className="mt-6 grid gap-4">
-          <Card>
+          <Card className="card-hover">
             <CardHeader>
               <CardTitle className="text-lg">NxtWave (Mentor)</CardTitle>
             </CardHeader>
@@ -276,13 +280,13 @@ export default function Index() {
               Mentored students in full-stack development.
             </CardContent>
           </Card>
-          <Card>
+          <Card className="card-hover">
             <CardHeader>
               <CardTitle className="text-lg">Cognizant (Intern)</CardTitle>
             </CardHeader>
             <CardContent>Worked on Procurement System.</CardContent>
           </Card>
-          <Card>
+          <Card className="card-hover">
             <CardHeader>
               <CardTitle className="text-lg">
                 CFSL (Digital Forensics Intern)
@@ -294,22 +298,23 @@ export default function Index() {
       </section>
 
       {/* Education */}
-      <section id="education" className="mx-auto mt-16 max-w-5xl">
-        <h2 className="text-2xl font-bold">Education</h2>
+      <section id="education" className="mx-auto mt-20 max-w-5xl">
+        <span className="section-kicker">EDUCATION</span>
+        <h2 className="mt-2 text-3xl font-bold">Education</h2>
         <div className="mt-6 grid gap-4 md:grid-cols-3">
-          <Card>
+          <Card className="card-hover">
             <CardHeader>
               <CardTitle className="text-lg">M.Tech CSE — JNTUH</CardTitle>
             </CardHeader>
             <CardContent>2023–present</CardContent>
           </Card>
-          <Card>
+          <Card className="card-hover">
             <CardHeader>
               <CardTitle className="text-lg">B.Tech CSE — MGIT</CardTitle>
             </CardHeader>
             <CardContent>2019–2022</CardContent>
           </Card>
-          <Card>
+          <Card className="card-hover">
             <CardHeader>
               <CardTitle className="text-lg">
                 Diploma CSE — Govt. Institute of Electronics
@@ -321,8 +326,9 @@ export default function Index() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="mx-auto mt-16 max-w-3xl">
-        <h2 className="text-2xl font-bold">Contact</h2>
+      <section id="contact" className="mx-auto mt-20 max-w-3xl">
+        <span className="section-kicker">CONTACT</span>
+        <h2 className="mt-2 text-3xl font-bold">Contact</h2>
         <div className="mt-3 text-muted-foreground">
           <p>
             Email:{" "}
