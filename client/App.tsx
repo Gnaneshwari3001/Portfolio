@@ -33,4 +33,13 @@ const App = () => (
   </QueryClientProvider>
 );
 
-createRoot(document.getElementById("root")!).render(<App />);
+// Avoid creating multiple React roots during HMR / repeated module evaluations
+const container = document.getElementById("root");
+if (container) {
+  const KEY = "__REACT_ROOT__";
+  const win = window as any;
+  if (!win[KEY]) {
+    win[KEY] = createRoot(container);
+  }
+  win[KEY].render(<App />);
+}
