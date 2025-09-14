@@ -34,6 +34,14 @@ export default function Layout() {
                 {item.label}
               </a>
             ))}
+            <a
+              href="https://github.com/Gnaneshwari3001"
+              target="_blank"
+              rel="noreferrer"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+            >
+              GitHub
+            </a>
             <a href="/api/resume">
               <Button size="sm" className="bg-primary/90 hover:bg-primary">
                 Download Resume
