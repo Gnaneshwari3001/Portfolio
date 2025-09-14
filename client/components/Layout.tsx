@@ -14,7 +14,11 @@ const navItems = [
 
 export default function Layout() {
   return (
-    <div className="min-h-dvh bg-gradient-to-b from-background to-background/60 text-foreground">
+    <div className="min-h-dvh relative text-foreground">
+      <div className="pointer-events-none fixed inset-0 -z-10">
+        <div className="absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-primary/20 blur-3xl" />
+        <div className="absolute bottom-0 right-0 h-80 w-80 translate-x-1/4 translate-y-1/4 rounded-full bg-accent/20 blur-3xl" />
+      </div>
       <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
           <a href="/" className="group inline-flex items-center gap-2">
