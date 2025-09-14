@@ -297,7 +297,7 @@ export default function Index() {
         <h2 className="text-2xl font-bold">Contact</h2>
         <div className="mt-3 text-muted-foreground">
           <p>Email: <a className="underline" href="mailto:gnaneshwarisarla001@gmail.com">gnaneshwarisarla001@gmail.com</a></p>
-          <p>Phone: <a className="underline" href="tel:+91">+91</a></p>
+          <p>Phone: <span className="text-foreground/70">Available upon request</span></p>
           <p>
             LinkedIn: <a className="underline" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/gnaneshwarisarala3001/">linkedin.com/in/gnaneshwarisarala3001</a>
           </p>
