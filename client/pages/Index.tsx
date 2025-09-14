@@ -113,7 +113,8 @@ export default function Index() {
             Gnaneshwari Sarla — Computer Science Engineer
           </h1>
           <p className="mt-3 max-w-prose text-base text-muted-foreground md:text-lg">
-            AI, Web Development & Digital Forensics — M.Tech CSE student passionate about building useful systems.
+            AI, Web Development & Digital Forensics — M.Tech CSE student
+            passionate about building useful systems.
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <a href="/api/resume">
@@ -126,17 +127,23 @@ export default function Index() {
               target="_blank"
               rel="noreferrer"
             >
-              <Button variant="secondary" className="card-hover">LinkedIn</Button>
+              <Button variant="secondary" className="card-hover">
+                LinkedIn
+              </Button>
             </a>
             <a
               href="https://github.com/Gnaneshwari3001"
               target="_blank"
               rel="noreferrer"
             >
-              <Button variant="outline" className="card-hover">GitHub</Button>
+              <Button variant="outline" className="card-hover">
+                GitHub
+              </Button>
             </a>
             <a href="mailto:gnaneshwarisarla001@gmail.com">
-              <Button variant="ghost" className="card-hover">Email Me</Button>
+              <Button variant="ghost" className="card-hover">
+                Email Me
+              </Button>
             </a>
           </div>
         </div>
@@ -258,7 +265,9 @@ export default function Index() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <Button variant="outline" className="btn-shine">View Project</Button>
+                    <Button variant="outline" className="btn-shine">
+                      View Project
+                    </Button>
                   </a>
                 </div>
               </CardContent>
