@@ -129,8 +129,11 @@ export default function Index() {
             >
               <Button variant="secondary">LinkedIn</Button>
             </a>
+            <a href="https://github.com/Gnaneshwari3001" target="_blank" rel="noreferrer">
+              <Button variant="outline">GitHub</Button>
+            </a>
             <a href="mailto:gnaneshwarisarla001@gmail.com">
-              <Button variant="outline">Email Me</Button>
+              <Button variant="ghost">Email Me</Button>
             </a>
           </div>
         </div>
@@ -219,7 +222,7 @@ export default function Index() {
               </CardHeader>
               <CardContent className="flex flex-1 flex-col justify-between gap-4">
                 <p className="text-muted-foreground">{p.summary}</p>
-                <div>
+                <div className="flex items-center gap-3">
                   <Dialog>
                     <DialogTrigger asChild>
                       <Button>View Details</Button>
@@ -233,6 +236,13 @@ export default function Index() {
                       </DialogHeader>
                     </DialogContent>
                   </Dialog>
+                  <a
+                    href={`https://github.com/search?q=${encodeURIComponent(p.title)}+user%3AGnaneshwari3001&type=repositories`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Button variant="outline">View Project</Button>
+                  </a>
                 </div>
               </CardContent>
             </Card>
@@ -297,9 +307,12 @@ export default function Index() {
         <h2 className="text-2xl font-bold">Contact</h2>
         <div className="mt-3 text-muted-foreground">
           <p>Email: <a className="underline" href="mailto:gnaneshwarisarla001@gmail.com">gnaneshwarisarla001@gmail.com</a></p>
-          <p>Phone: <span className="text-foreground/70">Available upon request</span></p>
+          <p>Phone: <a className="underline" href="tel:+919573503001">+91-9573503001</a></p>
           <p>
             LinkedIn: <a className="underline" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/gnaneshwarisarala3001/">linkedin.com/in/gnaneshwarisarala3001</a>
+          </p>
+          <p>
+            GitHub: <a className="underline" target="_blank" rel="noreferrer" href="https://github.com/Gnaneshwari3001">github.com/Gnaneshwari3001</a>
           </p>
         </div>
 
