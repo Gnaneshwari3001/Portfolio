@@ -29,7 +29,7 @@ export default function Layout() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                  "text-sm font-medium text-muted-foreground transition-colors hover:text-foreground",
                 )}
               >
                 {item.label}

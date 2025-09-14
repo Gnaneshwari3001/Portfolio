@@ -43,15 +43,13 @@ const projects = [
   },
   {
     title: "Real-Time Bus Tracking System (Supabase)",
-    summary:
-      "Map integration, alerts, and responsive design.",
+    summary: "Map integration, alerts, and responsive design.",
     details:
       "Built live location tracking with Supabase and WebSockets, geofencing alerts, route visualizations, and mobile-first UI with offline-friendly patterns.",
   },
   {
     title: "Indian Railway Ticket Booking System (IRCTC Clone)",
-    summary:
-      "Live search, stations data, and admin dashboard.",
+    summary: "Live search, stations data, and admin dashboard.",
     details:
       "Implemented search and booking flows, station directory, PNR-like tracking, and admin reporting with role-based permissions.",
   },
@@ -111,10 +109,12 @@ export default function Index() {
       <section className="relative mx-auto mt-12 grid items-center gap-8 rounded-2xl border bg-gradient-to-tr from-primary/5 via-accent/5 to-transparent px-6 py-12 md:mt-16 md:grid-cols-2 md:px-12">
         <div>
           <h1 className="text-3xl font-extrabold tracking-tight text-foreground md:text-5xl">
-            Gnaneshwari Sarla — Computer Science Engineer | AI, Web Development & Digital Forensics
+            Gnaneshwari Sarla — Computer Science Engineer | AI, Web Development
+            & Digital Forensics
           </h1>
           <p className="mt-4 max-w-prose text-muted-foreground md:text-lg">
-            M.Tech CSE student passionate about AI, web apps, and digital forensics.
+            M.Tech CSE student passionate about AI, web apps, and digital
+            forensics.
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <a href="/api/resume">
@@ -129,7 +129,11 @@ export default function Index() {
             >
               <Button variant="secondary">LinkedIn</Button>
             </a>
-            <a href="https://github.com/Gnaneshwari3001" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/Gnaneshwari3001"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Button variant="outline">GitHub</Button>
             </a>
             <a href="mailto:gnaneshwarisarla001@gmail.com">
@@ -154,7 +158,10 @@ export default function Index() {
       <section id="about" className="mx-auto mt-20 max-w-5xl">
         <h2 className="text-2xl font-bold">About</h2>
         <p className="mt-3 text-muted-foreground">
-          Enthusiastic and detail-oriented Computer Science Engineering postgraduate with strong knowledge of Java, Python, SQL, HTML, CSS, JavaScript, Node.js. Skilled in web development, workflow automation, and digital forensics.
+          Enthusiastic and detail-oriented Computer Science Engineering
+          postgraduate with strong knowledge of Java, Python, SQL, HTML, CSS,
+          JavaScript, Node.js. Skilled in web development, workflow automation,
+          and digital forensics.
         </p>
         <p className="mt-2 text-muted-foreground">
           Strengths: Quick learner, adaptable, analytical mindset.
@@ -277,7 +284,9 @@ export default function Index() {
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg">CFSL (Digital Forensics Intern)</CardTitle>
+              <CardTitle className="text-lg">
+                CFSL (Digital Forensics Intern)
+              </CardTitle>
             </CardHeader>
             <CardContent>Hands-on forensic investigations.</CardContent>
           </Card>
@@ -302,7 +311,9 @@ export default function Index() {
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg">Diploma CSE — Govt. Institute of Electronics</CardTitle>
+              <CardTitle className="text-lg">
+                Diploma CSE — Govt. Institute of Electronics
+              </CardTitle>
             </CardHeader>
             <CardContent>2015–2018</CardContent>
           </Card>
@@ -313,33 +324,73 @@ export default function Index() {
       <section id="contact" className="mx-auto mt-16 max-w-3xl">
         <h2 className="text-2xl font-bold">Contact</h2>
         <div className="mt-3 text-muted-foreground">
-          <p>Email: <a className="underline" href="mailto:gnaneshwarisarla001@gmail.com">gnaneshwarisarla001@gmail.com</a></p>
-          <p>Phone: <a className="underline" href="tel:+919573503001">+91-9573503001</a></p>
           <p>
-            LinkedIn: <a className="underline" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/gnaneshwarisarala3001/">linkedin.com/in/gnaneshwarisarala3001</a>
+            Email:{" "}
+            <a
+              className="underline"
+              href="mailto:gnaneshwarisarla001@gmail.com"
+            >
+              gnaneshwarisarla001@gmail.com
+            </a>
           </p>
           <p>
-            GitHub: <a className="underline" target="_blank" rel="noreferrer" href="https://github.com/Gnaneshwari3001">github.com/Gnaneshwari3001</a>
+            Phone:{" "}
+            <a className="underline" href="tel:+919573503001">
+              +91-9573503001
+            </a>
+          </p>
+          <p>
+            LinkedIn:{" "}
+            <a
+              className="underline"
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/gnaneshwarisarala3001/"
+            >
+              linkedin.com/in/gnaneshwarisarala3001
+            </a>
+          </p>
+          <p>
+            GitHub:{" "}
+            <a
+              className="underline"
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/Gnaneshwari3001"
+            >
+              github.com/Gnaneshwari3001
+            </a>
           </p>
         </div>
 
         <form onSubmit={onSubmit} className="mt-6 grid gap-3">
           <div className="grid gap-2 md:grid-cols-2">
             <Input name="name" placeholder="Your name" required />
-            <Input name="email" type="email" placeholder="Your email" required />
+            <Input
+              name="email"
+              type="email"
+              placeholder="Your email"
+              required
+            />
           </div>
-          <Textarea name="message" placeholder="Your message" required rows={6} />
+          <Textarea
+            name="message"
+            placeholder="Your message"
+            required
+            rows={6}
+          />
           <div className="flex items-center gap-3">
             <Button disabled={sending} type="submit">
               {sending ? "Sending..." : "Send Message"}
             </Button>
-            <a className="text-sm underline" href="mailto:gnaneshwarisarla001@gmail.com">
+            <a
+              className="text-sm underline"
+              href="mailto:gnaneshwarisarla001@gmail.com"
+            >
               Or email directly
             </a>
           </div>
-          {status && (
-            <p className="text-sm text-muted-foreground">{status}</p>
-          )}
+          {status && <p className="text-sm text-muted-foreground">{status}</p>}
         </form>
       </section>
     </div>

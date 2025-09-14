@@ -15,7 +15,10 @@ export const handleContact: RequestHandler = async (req, res) => {
   const { name, email, message } = parsed.data;
 
   const TO_EMAIL = process.env.TO_EMAIL || "gnaneshwarisarla001@gmail.com";
-  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = process.env as Record<string, string | undefined>;
+  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = process.env as Record<
+    string,
+    string | undefined
+  >;
 
   if (!SMTP_HOST || !SMTP_PORT || !SMTP_USER || !SMTP_PASS) {
     return res.status(200).json({
@@ -45,6 +48,8 @@ export const handleContact: RequestHandler = async (req, res) => {
 
     return res.status(200).json({ success: true });
   } catch (err) {
-    return res.status(500).json({ success: false, error: "Failed to send message" });
+    return res
+      .status(500)
+      .json({ success: false, error: "Failed to send message" });
   }
 };
