@@ -29,7 +29,7 @@ export default function Logo({ size = 32, className }: Props) {
         fill="hsl(var(--primary-foreground))"
         letterSpacing="1"
       >
-        gs
+        GS
       </text>
     </svg>
   );
